@@ -13,7 +13,7 @@ CSS_SELECTOR = "[class='t11']"
 async def crawl_single_page(crawler, url: str, css_selector: str, llm_strategy) -> tuple:
     """
     爬取单个页面并返回数据
-    返回: (data_list, success, is_404)
+    返回: (data_list, success, is_404) 
     """
     try:
         result = await crawler.arun(
